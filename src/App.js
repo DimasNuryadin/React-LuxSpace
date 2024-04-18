@@ -1,11 +1,17 @@
 import 'assets/css/app.css';
+import HomePage from 'pages/HomePage';
+import Details from 'pages/Details';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="text-lg underline">Contoh</h1>
-      </header>
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/categories/:idc' element={<Details />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
