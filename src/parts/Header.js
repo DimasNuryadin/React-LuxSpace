@@ -34,8 +34,8 @@ export default function Header({ theme, position }) {
                     theme === "white"
                       ? "text-black md:text-white"
                       : "text-white md:text-black"].join(" ")}
-                >Showcase</Link
-                >
+                >Showcase
+                </Link>
               </li>
               <li className="mx-3 py-6 md:py-0">
                 <Link
@@ -56,8 +56,8 @@ export default function Header({ theme, position }) {
                     theme === "white"
                       ? "text-black md:text-white"
                       : "text-white md:text-black"].join(" ")}
-                >Delivery</Link
-                >
+                >Delivery
+                </Link>
               </li>
               <li className="mx-3 py-6 md:py-0">
                 <Link
@@ -67,8 +67,8 @@ export default function Header({ theme, position }) {
                     theme === "white"
                       ? "text-black md:text-white"
                       : "text-white md:text-black"].join(" ")}
-                >Rewards</Link
-                >
+                >Rewards
+                </Link>
               </li>
             </ul>
           </div>
