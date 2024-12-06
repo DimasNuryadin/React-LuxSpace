@@ -12,7 +12,7 @@ export default function Cart(props) {
       <Header theme="black" />
       <BreadCrumb list={[
         { url: "/", name: "Home" },
-        { url: "/cart/9912", name: "Shopping Cart" },
+        { url: "/cart", name: "Shopping Cart" },
       ]} />
       <section className="md:py-16">
         <div className="container mx-auto px-4">
