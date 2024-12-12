@@ -98,7 +98,7 @@ export default function Details(props) {
       fetch({
         url: `/api/products/${idp}`
       }))
-  }, [run])
+  }, [run, idp])
 
   return (
     <>
