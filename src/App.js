@@ -6,9 +6,11 @@ import Cart from 'pages/Cart';
 import Congratulation from 'pages/Congratulation';
 import NotFound from 'pages/NotFound';
 
+import Provider from 'helpers/hooks/useGlobalContext'
+
 function App() {
   return (
-    <div className="App">
+    <Provider>
       <Router>
         <Routes>
           <Route path='/' element={<HomePage />} />
@@ -19,7 +21,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Router>
-    </div>
+    </Provider>
   );
 }
 
