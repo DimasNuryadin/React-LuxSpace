@@ -6,16 +6,11 @@ import React from 'react'
 import Clients from 'parts/Clients'
 import Sitemap from 'parts/Sitemap'
 import Footer from 'parts/Footer'
+import Document from "parts/Document"
 
-import useScrollAnchor from 'helpers/hooks/useScrollAnchor'
-import useModalDOM from 'helpers/hooks/useModalDOM'
-
-export default function HomePage(props) {
-  useScrollAnchor();
-  useModalDOM();
-
+export default function HomePage() {
   return (
-    <>
+    <Document>
       <Header theme="white" position="absolute" />
       <Hero />
       <BrowseRoom />
@@ -23,6 +18,6 @@ export default function HomePage(props) {
       <Clients />
       <Sitemap />
       <Footer />
-    </>
+    </Document>
   )
 }

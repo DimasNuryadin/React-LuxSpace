@@ -4,17 +4,18 @@ import BreadCrumb from 'components/BreadCrumb'
 import Footer from 'parts/Footer'
 import Sitemap from 'parts/Sitemap'
 import { Link } from 'react-router-dom'
+import Document from "parts/Document"
 
 export default function Congratulation() {
   return (
-    <>
+    <Document>
       <Header theme="black" />
       <BreadCrumb list={[
         { url: "/", name: "Home" },
         { url: "/congratulation", name: "Success Checkout" },
       ]} />
 
-      <section className="">
+      <section>
         <div className="container mx-auto min-h-screen">
           <div className="flex flex-col items-center justify-center">
             <div className="w-full md:w-4/12 text-center">
@@ -40,6 +41,6 @@ export default function Congratulation() {
 
       <Sitemap />
       <Footer />
-    </>
+    </Document>
   )
 }
